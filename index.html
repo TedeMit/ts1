@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Host Ps4">
+	<title>PIRATA EXPLOIT HOST</title>
+</head>
+<style>
+body{
+	background: lightblue url("Ps4.jpg");
+}
+
+.md {
+width: 230px;
+height: 60px;
+cursor: pointer;
+font-size: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 15px;
+margin-right: 5px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+}
+.boton {
+background-color: #ffc1d3;
+color: black;
+font-family: monospace;
+border-radius: 15px 50px;
+}
+
+.mj {
+width: 230px;
+height: 60px;
+cursor: pointer;
+font-size: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 15px;
+margin-right: 5px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+}
+
+.boton1 {
+background-color: #ffc1d3;
+color: black;
+font-family: monospace;
+border-radius: 15px 50px;
+}
+</style>
+	<body style="background-color:black;color:black;font-size:20px;text-align:center;">
+        <h1 style='font-size:40px;:0;'>PIRATA EXPLOIT HOST
+        <i><div id=mybuttons style=text-align:center>
+          <button class="md boton" onclick="testwebkit()">Check vulnerability</button>
+        <p id="API"></p>
+        <p id="WE"></p>
+        <a href=""><button class="md boton" onclick=hen()>GoldHen</button></a>
+        <a href=""><button class="md boton" onclick=mir1()>Mira</button></a>
+        <a href=""><button class="md boton" onclick=bet()> SLOW LOAD HEN</button></a>
+        <br>
+        <br>
+       <a href=""><button class="mj boton1" onclick=netcat()>BINLOADER</button></a>
+       <a href=""><button class="mj boton1" onclick=dex()>DISABLE-ASLR</button></a>
+       <a href=""><button class="mj boton1" onclick=debug()>NETCAT 9020</button></a>
+       <br>
+       <br>
+       <a href=""><button class="mj boton1" onclick=web()>APP2USB</button></a>
+       <a href=""><button class="mj boton1" onclick=disa()>BLACKUP</button></a>
+       <a href=""><button class="mj boton1" onclick=ena()>ENABLE-UPDATES</button></a>
+       <br>
+       <br>
+       <a href=""><button class="mj boton1" onclick=usb()>APP2USB</button></a>
+       <a href=""><button class="mj boton1" onclick=dump()>DUMPER</button></a>
+       <a href=""><button class="mj boton1" onclick=asl()>DUMPER</button></a>
+       <br>
+       <br>
+       <a href=""><button class="mj boton1" onclick=usb()>KERNEL-CLOCK</button></a>
+       <a href=""><button class="mj boton1" onclick=dump()>TODEX</button></a>
+       <a href=""><button class="mj boton1" onclick=asl()>PS4DEBUG</button></a>
+       <br
+       ><br>
+       <a href=""><button class="mj boton1" onclick=idu()>ENABLE-BROWSER</button></a>
+       <a href=""><button class="mj boton1" onclick=hist()>FAN-THRESHOLD</button></a>
+       <a href=""><button class="mj boton1" onclick=clock()>RIF-RENAMER</button></a>
+       <a href=""><button class="mj boton1" onclick=clock()>RESTORE</button></a><br>
+   <a style='font-size:30px;text-align:center;color:white;background: black;'>
+        Creator WebSite <a style='font-size:30px;text-align:center;color:white;'><a href="https://twitter.com/SoftRock04" style='font-size:30px;text-align:center;color:white;background: black;'>Mangek23</a></h1>
+      </a>
+    <body>
+     <script>
+        function testwebkit() {
+            alert("THIS SITE IS A TEST FOR THE WEBKIT VULNERABILITY FOR THE PS4\nCLICK OK\nIF YOU DON'T SEE ANY 'API PATCHED' ERROR OR 'MEMORY ERROR' ALERT OR ANY ERROR ALERT THAT'S MEAN IT'S NOT PATCH");
+
+            CheckAPI();
+        }
+
+        function CheckAPI() {
+            try {
+                API();
+            }catch(e){
+                var ge = e.message;
+                if (ge == "The string did not match the expected pattern."){
+                    document.getElementById("API").innerHTML = "API not patch !\n";
+                } else if (ge == "Illegal constructor.") {
+                    document.getElementById("API").innerHTML = "API not implement !\n";
+                } else {
+                    document.getElementById("API").innerHTML = e.message;
+                }
+            }
+
+        }
+
+        function API() {
+            let font = new FontFace("font1", 'url()', {});
+
+            var fontFaceSet = new FontFaceSet([font]);
+
+            font.family = "font2";
+
+            document.getElementById("API").innerHTML = "API patched !\n";
+
+            CheckWE();
+
+        }
+
+        function CheckWE() {
+            let font = new FontFace("font1", '', {}, ConfirmWork());
+
+            var fontFaceSet = new FontFaceSet([font]);
+
+            font.family = "font2";
+
+            NotWork();
+
+        }
+
+        function ConfirmWork() {
+            //alert("Webkit Work !");
+            document.getElementById("WE").innerHTML = "Webkit vulnerability work !\n";
+            //go();
+        }
+
+        function NotWork() {
+            //alert("Webkit Patched here !");
+            document.getElementById("WE").innerHTML = "Webkit vulnerability not work !\n";
+        }
+    </script>
+</html>
